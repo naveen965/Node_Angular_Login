@@ -1,4 +1,6 @@
 import { Router } from "express";
+import { check } from "express-validator";
+
 
 const router = Router();
 
@@ -9,12 +11,8 @@ const authValidator = [
     })
 ]
 
-router.post("/login", async (req, res) => {
-    const
-});
+router.post("/login", authValidator, authBodyValidator, async(req, res) => {});
 
-router.post("/register", authValidator, async (req, res) => {
-    const error = validationResult(req)
-});
+router.post("/register", authValidator, authBodyValidator, async (req, res) => {});
 
 export default router;
