@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import authBodyValidator from './middlewares/auth/authBodyValidator';
+import authBodyValidator from '../../middlewares/auth/authBodyValidator';
 
 const router = Router();
 
