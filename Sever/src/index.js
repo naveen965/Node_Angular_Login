@@ -1,5 +1,6 @@
 import express from "express";
 import connectDB from './config/database';
+import "./model/User";
 import Auth from './routes/auth/auth.routes';
 
 const app = express();

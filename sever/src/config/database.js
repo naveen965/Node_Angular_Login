@@ -1,5 +1,5 @@
 import { connect } from "mongoose";
-const mongoUrl = "mongodb+srv://naveen:naveen123@cluster0-pjxcl.azure.mongodb.net/test?retryWrites=true&w=majority";
+const mongoUrl = "mongodb+srv://naveen:naveen123@cluster0-pjxcl.azure.mongodb.net/authSystem?retryWrites=true&w=majority";
 
 const connectDB = async () => {
     try {
