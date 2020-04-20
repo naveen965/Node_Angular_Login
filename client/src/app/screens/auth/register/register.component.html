@@ -1,1 +1,9 @@
-<p>register works!</p>
+<div>
+    <form [formGroup]="registerForm">
+        <input type="email" required formControlName="email" />
+        <input type="password" required formControlName="password" />
+        <button (click)="registerUser()">
+            Register
+        </button>
+    </form>
+</div>
