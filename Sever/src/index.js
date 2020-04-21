@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json({ extends: true }));
 app.use(cors);
 
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5100;
 
 connectDB();
 app.use("/api/auth", Auth);

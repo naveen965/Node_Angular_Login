@@ -25,8 +25,8 @@ export class LoginComponent implements OnInit {
       email: this.loginForm.value.email,
       password: this.loginForm.value.password
     };
-    this.http.post('http://localhost:6100/api/auth/login', body).subscribe((res: any) => {
-      console.log(res);
+    this.http.post('http://localhost:5001/api/auth/login', body).subscribe((res: any) => {
+      localStorage.setItem('token', res);
     },
     err => {
       alert('Invalid Credentials');
