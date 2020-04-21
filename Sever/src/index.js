@@ -1,4 +1,5 @@
 import express from "express";
+import cors from 'cors';
 import connectDB from './config/database';
 import "./model/User";
 import Auth from './routes/auth/auth.routes';
@@ -6,8 +7,9 @@ import Auth from './routes/auth/auth.routes';
 const app = express();
 
 app.use(express.json({ extends: true }));
+app.use(cors);
 
-const PORT = process.env.PORT || 6100;
+const PORT = process.env.PORT || 5001;
 
 connectDB();
 app.use("/api/auth", Auth);

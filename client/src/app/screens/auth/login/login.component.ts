@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +9,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   loginForm = new FormGroup({
     email: new FormControl(''),
@@ -20,6 +21,16 @@ export class LoginComponent implements OnInit {
 
   loginUser = () => {
     console.log(this.loginForm.value);
+    const body = {
+      email: this.loginForm.value.email,
+      password: this.loginForm.value.password
+    };
+    this.http.post('http://localhost:6100/api/auth/login', body).subscribe((res: any) => {
+      console.log(res);
+    },
+    err => {
+      alert('Invalid Credentials');
+    });
   }
 
 }
