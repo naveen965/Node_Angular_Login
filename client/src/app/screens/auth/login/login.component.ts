@@ -21,6 +21,14 @@ export class LoginComponent implements OnInit {
   });
 
   ngOnInit() {
+    this.protectAuth();
+  }
+
+  protectAuth = () => {
+    if (localStorage.getItem('token')) {
+      this.router.navigate(['/']);
+      return;
+    }
   }
 
   loginUser = () => {
