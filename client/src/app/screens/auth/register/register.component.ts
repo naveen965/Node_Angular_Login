@@ -21,5 +21,4 @@ export class RegisterComponent implements OnInit {
   registerUser = () => {
     console.log(this.registerForm.value);
   }
-
 }
