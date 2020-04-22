@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { check } from "express-validator";
+import { check, validationResult } from "express-validator";
 import bcrypt from "bcryptjs";
 import gravatar from "gravatar";
 import { model } from "mongoose";
@@ -64,7 +64,7 @@ router.post("/login", authValidator, authBodyValidator, async (req, res) => {
             if (err) {
                 return res.status(400).json({ errors: [{ msg: "Something went wrong please try again" }] });
             }
-            return res.status(200).json(token)
+            return res.status(200).json(token);
         });
     } catch (err) {
         console.error(err.message);
