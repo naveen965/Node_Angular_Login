@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSliderModule } from '@angular/material/slider';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -35,7 +34,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatSliderModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    FlexLayoutModule,
     MatInputModule,
     MatButtonModule,
     MatCardModule
