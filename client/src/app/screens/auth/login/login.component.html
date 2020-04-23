@@ -1,7 +1,10 @@
 <div>
+    
+</div>
+<div>
     <form [formGroup]="loginForm">
-        <input type="email" required formControlName="email" />
-        <input type="password" required formControlName="password" />
+        <input type="email" required formControlName="email" placeholder="Email" />
+        <input type="password" required formControlName="password" placeholder="Password" />
         <button (click)="loginUser()">
             Login
         </button>
