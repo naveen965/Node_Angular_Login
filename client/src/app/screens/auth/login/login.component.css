@@ -1,6 +1,8 @@
 
 
 .matcard {
+    background-color: darkgray;
+    background-image: url('/src/assets/images/background.jpg');
     height: 400px;
     width: 30%;
     margin-left: 35%;
