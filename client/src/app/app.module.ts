@@ -9,13 +9,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './screens/auth/register/register.component';
 import { LoginComponent } from './screens/auth/login/login.component';
 import { HomeComponent } from './screens/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { WelcomeComponent } from './screens/welcome/welcome.component';
 
 
 @NgModule({
@@ -25,7 +25,6 @@ import { WelcomeComponent } from './screens/welcome/welcome.component';
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    WelcomeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +37,8 @@ import { WelcomeComponent } from './screens/welcome/welcome.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
