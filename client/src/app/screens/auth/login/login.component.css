@@ -1,8 +1,7 @@
 
 
 .matcard {
-    background-color: darkgray;
-    background-image: url('/src/assets/images/background.jpg');
+    background-color: aliceblue;
     height: 400px;
     width: 30%;
     margin-left: 35%;
@@ -21,20 +20,19 @@
 }
 
 .login-full-width1 {
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding-bottom: 4%;
 }
 
 .login-full-width2 {
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding-bottom: 8%;
 }
 
 .login-button-row button,
 .login-button-row a {
-  margin-right: 8px;
-  width: 100%;
+  width: 90%;
   height: 10%;
 }
