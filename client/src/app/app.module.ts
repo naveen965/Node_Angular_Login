@@ -15,6 +15,7 @@ import { RegisterComponent } from './screens/auth/register/register.component';
 import { LoginComponent } from './screens/auth/login/login.component';
 import { HomeComponent } from './screens/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { WelcomeComponent } from './screens/welcome/welcome.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     RegisterComponent,
     LoginComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,

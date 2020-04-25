@@ -13,8 +13,6 @@ export class LoginComponent implements OnInit {
 
   constructor(private http: HttpClient, private router: Router) { }
 
-  // myimage = '/src/assets/images/background.jpg';
-
   jwt = new JwtHelperService();
 
   loginForm = new FormGroup({

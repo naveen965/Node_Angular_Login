@@ -1,0 +1,48 @@
+.register {
+    /* background-image: url("/assets/images/background.jpg"); */
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.matcard {
+    height: 500px;
+    background-color: rgb(247, 247, 247);
+    /* background-image: url("/assets/images/background.jpg"); */
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.log {
+    margin: 8%;
+    text-align: center;
+}
+
+.mat-card-title.img {
+    image-rendering: pixelated;
+}
+
+.register-form {
+    width: 100%;
+    height: 100%;
+}
+
+.register-full-width1 {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 4%;
+}
+
+.register-full-width2 {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 8%;
+}
+
+.register-button-row button,
+.register-button-row a {
+  width: 90%;
+  height: 10%;
+}

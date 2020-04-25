@@ -1,17 +1,27 @@
-
+.login {
+    /* background-image: url("/assets/images/background.jpg"); */
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
 
 .matcard {
-    background-color: aliceblue;
-    height: 400px;
+    height: 500px;
+    background-color: rgb(247, 247, 247);
+    /* background-image: url("/assets/images/background.jpg"); */
     width: 30%;
     margin-left: 35%;
-    margin-top: 6%;
+    margin-top: 3%;
     text-align: center;
 }
 
-.mat-card-title {
-    margin-top: 10%;
-    margin: 20%;
+.log {
+    margin: 8%;
+    text-align: center;
+}
+
+.mat-card-title.img {
+    image-rendering: pixelated;
 }
 
 .login-form {
