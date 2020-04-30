@@ -10,7 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { MatMenuModule } from '@angular/material/menu';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './screens/auth/register/register.component';
@@ -40,7 +40,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     MatButtonModule,
     MatCardModule,
     MatGridListModule,
-    MatMenuModule
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
