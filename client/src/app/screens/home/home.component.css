@@ -1,0 +1,32 @@
+.home {
+    height: 675px;
+    background-image: url(/assets/images/124.jpg);
+}
+
+.home-card {
+    height: 660px;
+    background-color: rgb(255, 255, 255);
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+}
+
+.home-card-header {
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.text {margin-left: 11%;
+    font-size: 110%;
+}
+
+.home-header-image {
+    background-image: url('//www.gravatar.com/avatar/04d6f17682ffc550c3e653c28226811f?s=200&r=pg&d=mm');
+    background-size: cover;
+}
+
+.logout-button-row button,
+.logout-button-row a {
+  width: 90%;
+  height: 10%;
+}

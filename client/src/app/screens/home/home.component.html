@@ -1,8 +1,21 @@
-<h1>{{user.email}}</h1>
-<!-- <h1>{{user._id}}</h1> -->
-
-<img [src]="user.image" alt="" />
-
-<button (click)="logOut()">
-    LogOut
-</button>
+<div class="home">
+    <mat-card class="home-card">
+        <mat-card-header class="home-card-header">
+          <div mat-card-avatar class="home-header-image"></div>
+          <mat-card-title class="text">{{user.email}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="user.image" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            Hello {{user.email}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <div class="logout-button-row">
+                <button mat-raised-button color="primary" (click)="logOut()">
+                    LogOut
+                </button>
+            </div>
+        </mat-card-actions>
+    </mat-card>
+</div>
