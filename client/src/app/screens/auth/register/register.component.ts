@@ -13,6 +13,7 @@ export class RegisterComponent implements OnInit {
   constructor(private router: Router, private http: HttpClient) { }
 
   registerForm = new FormGroup({
+    username: new FormControl(''),
     email: new FormControl(''),
     password: new FormControl('')
   });
@@ -30,6 +31,7 @@ export class RegisterComponent implements OnInit {
 
   registerUser = () => {
     const body = {
+      username: this.registerForm.value.username,
       email: this.registerForm.value.email,
       password: this.registerForm.value.password
     };

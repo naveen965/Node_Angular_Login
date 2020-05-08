@@ -12,7 +12,7 @@
 }
 
 .matcard {
-    height: 500px;
+    height: 550px;
     background-color: rgba(255, 255, 255, 0.37);
     width: 30%;
     margin-left: 35%;
@@ -43,6 +43,12 @@
     width: 90%;
     height: 100%;
     padding-bottom: 8%;
+}
+
+.register-full-username {
+    width: 90%;
+    height: 100%;
+    padding-bottom: 4%;
 }
 
 .register-button-row button,
