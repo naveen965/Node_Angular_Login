@@ -20,8 +20,8 @@ const authValidator = [
 
 router.post("/register", authValidator, authBodyValidator, async (req, res) => {
     try {
-        let { email, password } = req.body;
-        const user = await User.findOne({ email });
+        let { username, email, password } = req.body;
+        const user = await User.find({ username, email });
         if (user) {
             return res.status(400).json({ error: [{ msg: "Email Already Taken, Please Try Another Email" }] });
         }
@@ -33,7 +33,7 @@ router.post("/register", authValidator, authBodyValidator, async (req, res) => {
         const salt = await bcrypt.genSalt(10);
         password = await bcrypt.hash(password, salt);
         
-        const newUser = new User({ email, password, image });
+        const newUser = new User({ username, email, password, image });
         await newUser.save();
         
         return res.status(200).json(newUser);
