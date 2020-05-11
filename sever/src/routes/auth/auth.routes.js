@@ -21,7 +21,7 @@ const authValidator = [
 router.post("/register", authValidator, authBodyValidator, async (req, res) => {
     try {
         let { email, password } = req.body;
-        const user = await User.find({ email });
+        const user = await User.findOne({ email });
         if (user) {
             return res.status(400).json({ error: [{ msg: "Email Already Taken, Please Try Another Email" }] });
         }
